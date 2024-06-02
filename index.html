@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>БЛИС</title>
+    <link rel="stylesheet" href="styles/navbar-style.css">
+    <link rel="stylesheet" href="styles/index-style.css">
+    <link rel="stylesheet" href="styles/reviews-style.css">
+    <link rel="stylesheet" href="styles/search-style.css">
+</head>
+
+<body>
+    <!-- <div class="back"> -->
+
+    <div class="welcome-screen">
+        <div class="navbar">
+            <div class="back"></div>
+            <div class="navbar-container container">
+                <a class="navbar__logo" href="index.html"><img src="images/logo-blis.png" alt=""></a>
+                <div class="drop">
+                    <div class="nav-list">
+                        <a class="navbar__item" href="services/services-buy.html"> Услуги </a>
+                        <a class="navbar__item" href="objects/objects-buy.html"> База объектов </a>
+                        <a class="navbar__item" href="about-us.html"> О нас </a>
+                        <a class="navbar__item" href="about-us.html#url-contacts"> Контакты </a>
+                        <a class="navbar__item" href="index.html#url-reviews"> Отзывы </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <!-- </div> -->
+        <div class="search-bar">
+            <div class="search-bar__container container">
+                <h1 class="search-bar__title">Поможем Вам с поиском недвижимости</h1>
+                <form class="search-bar__form" id="searchForm">
+                    <div class="search-bar__options">
+                        <div>
+                            <input type="radio" id="sale" name="dealType" value="sale" checked>
+                            <label for="sale" class="search-bar__option">Продажа</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="rent" name="dealType" value="rent">
+                            <label for="rent" class="search-bar__option">Аренда</label>
+                        </div>
+
+                    </div>
+                    <input type="text" id="searchInput" class="search-bar__input"
+                        placeholder="Квартира около м. Дмитровская">
+                    <button type="submit" id="searchBtn" class=" search-bar__btn btn">Искать</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="best-offers">
+        <div class="container">
+            <h1 class="best-offers__title">Лучшие предложения месяца</h1>
+            <div class="best-offers__items">
+                <a class="best-offers__item" href="items/item1.html">
+                    <!-- <div > -->
+                    <img class="big-pic" src="images/item1.png" alt="">
+                    <div class="best-offers__describe">
+                        <p class="best-offers__price">25 000 000 ₽</p>
+                        <p class="best-offers__text">Квартира | 90 кв. м | 3 комнаты</p>
+                        <p class="best-offers__text">Метро: Курская</p>
+                        <p class="best-offers__text">Москва, ул. Казакова, д. 10</p>
+                    </div>
+                    <!-- </div> -->
+                </a>
+                <a class="best-offers__item" href="items/item2.html">
+                    <!-- <div > -->
+                    <img class="big-pic" src="images/item2.png" alt="">
+                    <div class="best-offers__describe">
+                        <p class="best-offers__price">30 000 000 ₽</p>
+                        <p class="best-offers__text">Квартира | 110 кв. м | 3 комнаты</p>
+                        <p class="best-offers__text">Метро: Парк победы</p>
+                        <p class="best-offers__text">Москва, ул. Ленина, д. 25</p>
+                    </div>
+                    <!-- </div> -->
+                </a>
+                <div class="best-offers__item">
+                    <img class="big-pic" src="images/item3.png" alt="">
+                    <div class="best-offers__describe">
+                        <p class="best-offers__price">35 000 ₽ / месяц</p>
+                        <p class="best-offers__text">Квартира | 40 кв. м | 1 комната</p>
+                        <p class="best-offers__text">Метро: Китай-Город</p>
+                        <p class="best-offers__text">Москва, ул. Преображенка, д. 15</p>
+                    </div>
+                </div>
+                <div class="best-offers__item">
+                    <img class="big-pic" src="images/item4.png" alt="">
+                    <div class="best-offers__describe">
+                        <p class="best-offers__price">50 000 ₽ / месяц</p>
+                        <p class="best-offers__text">Квартира | 65 кв. м | 2 комнаты</p>
+                        <p class="best-offers__text">Метро: Тверская</p>
+                        <p class="best-offers__text">Москва, ул. Пушкина, д. 10</p>
+                    </div>
+                </div>
+            </div>
+            <div class="best-offers__container-btn" >
+                <a class="best-offers__btn btn" href="objects/objects-buy.html">Посмотреть ещё</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="why-us">
+        <div class="back2"></div>
+        <div class="container">
+            <h1 class="why-us__title">Почему именно мы?</h1>
+            <div class="why-us__information">
+                <div class="why-us__text">
+                    <p> Мы работаем с клиентами всех категорий и гарантируем индивидуальный подход к каждому. Наша
+                        команда
+                        всегда готова помочь ответить на все Ваши вопросы, подобрать оптимальный вариант и поддержать
+                        Вас на
+                        всех этапах.
+                    </p>
+                    <p> Наши специалисты осуществят поиск объектов исходя из Ваших предпочтений, проведут подробную
+                        юридическую проверку объекта, помогут с оформлением сделки и всесторонне поддержат Вас до
+                        момента
+                        покупки или продажи недвижимости.
+                    </p>
+                    <p> Обращайтесь к нам, и мы сделаем все возможное, чтобы Ваш опыт с нами был приятным и успешным.
+                        Надежность, профессионализм и эффективность – вот основные принципы работы нашей команды.
+                    </p>
+                </div>
+                <div class="why-us__pic">
+                    <img src="images/home/pic-circle.png" alt="">
+                    <p>Александа Белякова, <br> директор и риэлтор</p>
+                </div>
+
+            </div>
+            <div class="why-us__container-btn" id="open-modal-btn">
+                <a class="why-us__btn btn" href="#">Заказать звонок</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="my-modal">
+        <div class="modal__box" >
+                <button class="modal__close-btn" id="close-my-modal-btn">
+                &times;
+                </button>
+                <h2>Обратная связь</h2>
+
+                <form class="modal__form" id="applicationForm" method="post" action="process_form.php">
+                    <label class="modal__lable" for="fullname">ФИО:</label>
+                    <input class="modal__input" type="text" id="fullname" name="fullname" required>
+                    
+                    <label class="modal__lable" for="phone">Номер телефона:</label>
+                    <input class="modal__input" type="tel" id="phone" name="phone" required>
+                    
+                    <label class="modal__lable" for="email">Электронная почта:</label>
+                    <input class="modal__input" type="email" id="email" name="email" required>
+                    
+                    <button class="modal__btn btn" type="submit">Отправить заявку</button>
+                </form>
+                
+
+        </div>
+</div>
+
+    <div class="reviews container">
+        <article id="url-reviews">
+            <h1>Отзывы</h1>
+        </article>
+        <div class="reviews__carousel">
+            <div class="reviews__item">
+                <p class="reviews__client">Иван Иванов</p>
+                <p class="reviews__text">Сотрудничество с риэлторской фирмой БЛИС принесло нам отличный результат - мы
+                    быстро нашли идеальное жилье по доступной цене. Профессиональный подход сотрудников и оперативное
+                    решение всех вопросов порадовали. Рекомендую!
+                </p>
+            </div>
+            <div class="reviews__item">
+                <p class="reviews__client">Петр Петров</p>
+                <p class="reviews__text">Спасибо фирме БЛИС за быстрое и качественное оформление сделки по продаже
+                    нашего дома. Риэлторы работают оперативно, предлагают адекватные цены и всегда идут на встречу
+                    пожеланиям клиента. Очень довольны!</p>
+            </div>
+            <div class="reviews__item">
+                <p class="reviews__client">Павел Павлов</p>
+                <p class="reviews__text">Весь процесс покупки квартиры с риэлторской фирмой БЛИС прошел гладко и без
+                    неприятных сюрпризов. Риэлторы оказались профессионалами своего дела, всегда на связи, готовы помочь
+                    и поддержать.</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prevBtn">⬅</button>
+            <button id="nextBtn">⮕</button>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <div class="footer__back"></div>
+        <div class="footer__text-area">
+            <p class="footer__blis">2024 БЛИС</p>
+            <div class="footer__logos">
+                <img class="footer__logo" src="images/logo-telegram.png" alt="">
+                <img class="footer__logo" src="images/logo-whatsup.png" alt="">
+                <img class="footer__logo" src="images/logo-vk.png" alt="">
+                <img class="footer__logo" src="images/logo-facebook.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
