@@ -1,0 +1,76 @@
+.search-bar {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    align-items: center;
+    font-family: 'Noto Sans Regular', Arial, sans-serif;
+    max-width: .83;
+    margin-bottom: 260px;
+}
+
+
+.search-bar__options {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* Центрирование элементов по горизонтали */
+
+}
+
+.search-bar__option {
+    margin: 0 7px;
+    /* Установка одинакового отступа между элементами */
+}
+
+.search-bar__options input[type="radio"] {
+    /* margin-inline-end: 5px;  */
+    /* Отступы для радио-кнопок */
+    accent-color: #000000;
+
+}
+
+#searchInput {
+    /* padding: 5px; */
+    min-width: 400px;
+    font-size: 18px;
+    outline: none;
+    border-radius: 0;
+    border-width: 0.5px;
+}
+
+
+/* #searchBtn {
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    } */
+
+.search-bar__form {
+    display: flex;
+    background-color: #fff;
+    max-width: 750px;
+    height: 60px;
+    margin: auto;
+    /* justify-content: space-between; */
+    border-radius: 5px;
+
+
+}
+
+.search-bar__title {
+    /* margin-top: 350px;    */
+    /*.4*/
+    /* margin-left: 20px; */
+    /* text-align: start; */
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 2px 5px 10px #000000;
+    margin-bottom: 10px;
+}
+
+.search-bar__btn {
+    margin: 0;
+    padding-inline: 30px;
+    border-radius: 0 5px 5px 0;
+}

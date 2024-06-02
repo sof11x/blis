@@ -1,0 +1,47 @@
+body{
+        background-color: #e4e4e475;
+        font-family: 'Noto Sans Regular', Arial, sans-serif;
+}
+
+
+.realty {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        /* grid-template-rows: repeat(3, 1fr); */
+}
+
+.realty__container{
+        display: flex;
+}
+.realty__img {
+        max-height: 40.5vh;
+        border-radius: 10px;
+
+}
+.realty__information {
+        display: flex;
+        flex-direction: column;
+        margin: 0 0 7.8vh 3vw;
+}
+.realty__properties {
+        margin: 0 0 5vh 0;
+}
+.realty__description {
+}
+
+.realty__caption {
+        list-style-type:none;
+        font-weight: 900;
+        font-size: 20px;
+}
+.realty__property {
+        list-style-type: "■ ";
+        font-size: 18px;
+        margin: 0 0 0 1vw;
+}
+
+.realty__text{
+        font-size: 16px;
+        margin: 0 0 1vh 0;
+
+}

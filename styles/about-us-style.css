@@ -1,0 +1,97 @@
+
+.container-for-pic{
+        background-image: url("/images/about-us/background.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        height: 118vh;
+}
+
+.text-about, .contacts {
+        grid-template-columns: repeat(12, 1fr);
+        display: grid;
+        position: relative;
+}
+
+.text-about{
+        
+}
+
+.text-about__back {
+        position: absolute;
+        opacity: .6;
+        z-index: -100;
+        background-color: white;
+        height: 610px; /*676px переписать в проценты*/
+        width: 67%;
+        margin: 0;
+        /* margin-bottom: 40px; */
+}
+
+.text-about__container{
+        margin-top: 6.8vh;
+        margin-bottom: 120px;
+        background-color: rgba(255, 255, 255, 0.6);
+}      
+
+.text-about__title, .contacts__title {
+        margin: 5vh 0 5vh 0;
+}
+
+.text-about__container>p {
+        font-family: 'Noto Sans Regular', Arial, sans-serif;
+        font-size: 16px;
+        margin-inline: 40px;
+        margin-bottom: 20px;
+}
+
+.text-about__map{
+        /* margin-top: 40px; */
+        text-align: center;
+        max-height: 100vh;
+        overflow: hidden;
+        margin-bottom: 6.8vh;
+        
+}
+
+.contacts{
+        /* margin-top: 50px; */
+}
+
+.contacts__container {
+        grid-column: 4/10;
+}
+.contacts__title {
+}
+.contacts__persons {
+        display: flex;
+        flex-direction: column;
+}
+.contacts__item {
+        display: flex;
+        flex-direction: row;
+        /* align-items: flex-start; */
+        align-items: start;
+        margin-bottom: 60px;    /*сделать в процентах*/
+}
+
+.contacts__pic{
+        
+}
+.contacts__text {
+        font-family: 'Noto Sans Regular', Arial, sans-serif;
+        font-size: 16px;
+        margin-left: 30px;
+
+}
+
+.contacts__name {
+        margin-top: 17px;
+        /* margin-left: 30px; */
+        margin-bottom: 27px;
+}
+
+.contacts__experience,.contacts__number, .contacts__email {
+        margin-bottom: 10px;
+}

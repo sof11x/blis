@@ -1,0 +1,126 @@
+body {
+        background-color: #e4e4e475;
+        font-family: 'Noto Sans Regular', Arial, sans-serif;
+        /* display: grid;
+        grid-template-rows: auto 1fr auto; */
+        /* min-height: 100vh; */
+        display: grid;
+        grid-template-rows: 1fr auto;
+
+}
+
+a {
+        text-decoration: none;
+        color: black;
+}
+
+.title {
+        margin-top: 50px;
+        margin-bottom: 0;
+}
+
+.information {
+        display: grid;
+        grid-template-columns: repeat(12, minmax(0, 1fr));
+        min-height: 80vh;
+
+}
+
+.information__container {
+        margin-top: 50px;
+        display: flex;
+        grid-column: 3/11;
+}
+
+.information__nav {
+        list-style-type: none;
+        font-size: 18px;
+        width: 250px;
+}
+
+.information__nav-item_active {
+        font-weight: bold;
+}
+
+.information__nav-item {
+        padding-bottom: 20px;
+        word-wrap: break-word;
+}
+
+.information__service {
+        list-style-type: "■ ";
+        margin-left: 50px;
+}
+
+.information__item {
+        margin-bottom: 20px;
+}
+
+.information__com {
+        padding-top: 20px;
+}
+
+.information__ipoteka-box {
+        border: solid 1px black;
+        background-color: white;
+        padding: 20px;
+        width: fit-content;
+        height: fit-content;
+        font-size: 10px;
+        display: flex;
+        /* text-align: center; */
+        align-items: center;
+        font-size: 16px;
+        margin-top: 40px;
+        margin-bottom: 60px;
+
+}
+
+.information__ipoteka-form {
+}
+
+.information__ipoteka {
+        display: flex;
+        align-items: center;
+}
+
+.information__lable {
+        display: block;
+        /* margin-bottom: 10px; */
+        text-wrap: nowrap;
+}
+
+.information__input {
+        margin-bottom: 10px;
+        text-wrap: nowrap;
+
+}
+
+.information__btn {
+        display: block;
+        margin-top: 10px;
+}
+
+#depositWarning {
+        /* display: inline-block; */
+        font-size: 12px;
+        color: red;
+        margin-top: 5px;
+        /* width: inherit; */
+        /* word-wrap: break-word; */
+        /* max-width: 50%; */
+        /* text-align: center; */
+
+}
+
+.information__output{
+        margin-left: 20px;
+}
+
+#everymonth-pay{
+        display: none;
+}
+
+.information__change-bank{
+        text-wrap: nowrap;
+}
