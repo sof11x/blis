@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>БЛИС</title>
+        <link rel="stylesheet" href="/styles/navbar-style.css">
+        <link rel="stylesheet" href="/styles/services-style.css">
+
+</head>
+
+<body>
+        <div class="navbar">
+                <div class="back"></div>
+                <div class="navbar-container container">
+                        <a class="navbar__logo" href="/index.html"><img src="/images/logo-blis.png" alt=""></a>
+                        <div class="drop">
+                                <div class="nav-list">
+                                        <a class="navbar__item" href="/services/services-buy.html"> Услуги </a>
+                                        <a class="navbar__item" href="/objects/objects-buy.html"> База объектов </a>
+                                        <a class="navbar__item" href="/about-us.html"> О нас </a>
+                                        <a class="navbar__item" href="/about-us.html#url-contacts"> Контакты </a>
+                                        <a class="navbar__item" href="/index.html#url-reviews"> Отзывы </a>
+                                        <!-- <a href="index.html">О нас</a>
+                                                        <a href="index.html">Прайс</a>
+                                                        <a href="index.html">Поставщики</a>
+                                                        <a href="index.html">Контакты</a>
+                                                        <a href="index.html">Работа</a> -->
+                                </div>
+                        </div>
+                </div>
+
+
+
+        </div>
+
+
+        <h1 class="title">Услуги</h1>
+
+        <div class="information">
+                <div class="information__container container">
+                        <ul class="information__nav">
+                                <a href="services-buy.html">
+                                        <li class="information__nav-item">
+                                                Покупка
+                                        </li>
+                                </a>
+                                <a href="services-rent.html">
+                                        <li class="information__nav-item">
+                                                Аренда
+                                        </li>
+                                </a>
+                                <a href="services-sell.html">
+                                        <li class="information__nav-item">
+                                                Продажа
+                                        </li>
+                                </a>
+                                <a href="#"> <!--services-ipoteka.html-->
+                                        <li class="information__nav-item information__nav-item_active information__com">
+                                                Ипотека
+                                        </li>
+                                </a>
+                                <a href="services-comreal.html">
+                                        <li class="information__nav-item information__com">
+                                                Коммерческая недвижимость
+                                        </li>
+                                </a>
+                        </ul>
+                        <div class="information__service">
+                                <p> В разделе "Ипотека" на нашем сайте Вы можете легко рассчитать стоимость кредита с
+                                        помощью удобного калькулятора ипотеки. Наши специалисты сделают все возможное,
+                                        чтобы сделать процесс получения ипотеки простым и понятным для вас. </p>
+                                <p> Минимальный первоначальный взнос: 100 000 рублей</p>
+                                <p> Минимальная вводимая цена недвижимости: 300 000 рублей</p>
+                                <p> Количество лет варьируется от 1 года до 30 лет</p>
+                                <p> Первоначальный взнос в ФортунаБанк быть не менее 30% от стоимости недвижимости, а в ПрогрессБанк - не менее 60%</p>
+                                <div class="information__ipoteka">
+                                        <div class="information__ipoteka-box">
+                                                <div class="information__change-bank">
+
+                                                        <label for="bank">Выберите банк:</label>
+                                                        <select id="bank">
+                                                                <option value="progress">ПрогрессБанк</option>
+                                                                <option value="fortuna">ФортунаБанк</option>
+                                                        </select>
+                                                        <!-- <div id="depositWarning"></div> -->
+
+
+
+                                                        <form class="information__ipoteka-form" action="#">
+                                                                <label class="information__lable"
+                                                                        for="deposit">Первоначальный
+                                                                        взнос, тыс. руб.:</label>
+                                                                <input class="information__input" type="number"
+                                                                        id="deposit" placeholder="Введите сумму">
+
+                                                                <label class="information__lable" for="loanTerm">Срок
+                                                                        кредитования, лет:</label>
+                                                                <input class="information__input" type="number"
+                                                                        id="loanTerm" placeholder="Введите срок">
+
+                                                                <label class="information__lable"
+                                                                        for="apartmentCost">Стоимость
+                                                                        квартиры, тыс. руб.:</label>
+                                                                <input class="information__input" type="number"
+                                                                        id="apartmentCost" placeholder="Введите сумму">
+
+                                                                <!-- <button class="btn information__btn" id="calculateBtn">Рассчитать</button> -->
+                                                        </form>
+                                                </div>
+                                        </div>
+                                        <div class="information__output">
+                                                <p id="everymonth-pay">Ежемесячный платеж: </p>
+                                                <div id="result" style="text-align: center; text-wrap: wrap;"> </div>
+                                                <span id="stavka" style="font-size: 14px; text-align: center;"></span>
+                                                <p id="depositWarning"></p>
+                                                <!-- <div ></div> -->
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+
+        </div>
+
+
+        <div class="footer">
+                <div class="footer__back"></div>
+                <div class="footer__text-area">
+                        <p class="footer__blis">2024 БЛИС</p>
+                        <div class="footer__logos">
+                                <img class="footer__logo" src="/images/logo-telegram.png" alt="">
+                                <img class="footer__logo" src="/images/logo-whatsup.png" alt="">
+                                <img class="footer__logo" src="/images/logo-vk.png" alt="">
+                                <img class="footer__logo" src="/images/logo-facebook.png" alt="">
+                        </div>
+                </div>
+        </div>
+
+        <script src="/ipoteka.js"></script>
+</body>
+
+</html>
