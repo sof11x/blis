@@ -34,7 +34,7 @@
 
 }
 
-button {
+.reviews__btn-prev, .reviews__btn-next{
     margin: 0 10px;
     padding: 5px 10px;
     /* background-color: #f1f1f1; */
@@ -42,10 +42,6 @@ button {
     cursor: pointer;
     font-size: 30px;
     /* color: #f1f1f1; */
-}
-
-button:hover {
-    /* background-color: #e0e0e0; */
 }
 
 
