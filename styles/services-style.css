@@ -82,6 +82,7 @@ a {
 .information__ipoteka {
         display: flex;
         align-items: center;
+        justify-content: center;
 }
 
 .information__lable {
@@ -93,6 +94,7 @@ a {
 .information__input {
         margin-bottom: 10px;
         text-wrap: nowrap;
+        width: 60%;
 
 }
 
@@ -123,4 +125,10 @@ a {
 
 .information__change-bank{
         text-wrap: nowrap;
+}
+
+#bank{
+        display: block;
+        width: 62%;
+        margin-bottom: 10px;
 }
