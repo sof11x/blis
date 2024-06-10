@@ -3,39 +3,38 @@ const reviewItems = document.querySelectorAll('.reviews__item');
 const prevBtn = document.querySelector('.reviews__btn-prev');
 const nextBtn = document.querySelector('.reviews__btn-next');
 let index = 0;
+
 function showReview() {
-    reviews.forEach((review, i) => {
+    reviewItems.forEach((review, i) => {
         review.style.transform = `translateX(-${index * 100}%)`;
-    }); }
+    });
+}
+
 function nextReview() {
     index++;
-    if (index >= reviews.length) {
+    if (index >= reviewItems.length) {
         index = 0;
     }
-    showReview(); }
+    showReview();
+}
+
 function prevReview() {
     index--;
     if (index < 0) {
-        index = reviews.length - 1;
+        index = reviewItems.length - 1;
     }
-    showReview(); }
+    showReview();
+}
+
 nextBtn.addEventListener('click', nextReview);
 prevBtn.addEventListener('click', prevReview);
-document.querySelectorAll(".modal__btn_open").addEventListener("click", function()
-{
-        document.querySelectorAll(".modal").classList.add("open")
-});
-document.querySelectorAll(".modal__btn_close").addEventListener("click", function()
-{
-        document.querySelectorAll(".modal").classList.remove("open")
+
+document.querySelectorAll(".modal-btn_open").forEach(btn => {
+    btn.addEventListener("click", function () {
+        document.querySelector(".modal").classList.add("open");
+    });
 });
 
-// document.querySelector(".reviews__open-modal-btn").addEventListener("click", function()
-// {
-//         document.querySelector(".reviews__modal").classList.add("reviews__modal_open")
-// });
-// document.querySelector(".reviews__close-modal-btn").addEventListener("click", function()
-// {
-//         document.querySelector(".reviews__modal").classList.remove("reviews__modal_open")
-// });
-
+document.querySelector(".modal__close-btn").addEventListener("click", function () {
+    document.querySelector(".modal").classList.remove("open");
+});
