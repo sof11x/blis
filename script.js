@@ -21,13 +21,13 @@ function prevReview() {
     showReview(); }
 nextBtn.addEventListener('click', nextReview);
 prevBtn.addEventListener('click', prevReview);
-document.querySelector(".modal__btn_open").addEventListener("click", function()
+document.querySelectorAll(".modal__btn_open").addEventListener("click", function()
 {
-        document.querySelector(".modal").classList.add("modal_open")
+        document.querySelectorAll(".modal").classList.add("modal_open")
 });
-document.querySelector(".modal__btn_close").addEventListener("click", function()
+document.querySelectorAll(".modal__btn_close").addEventListener("click", function()
 {
-        document.querySelector(".modal").classList.remove("modal_open")
+        document.querySelectorAll(".modal").classList.remove("modal_open")
 });
 
 // document.querySelector(".reviews__open-modal-btn").addEventListener("click", function()
